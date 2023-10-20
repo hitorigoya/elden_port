@@ -1,14 +1,14 @@
 <script setup>
 import status from "~/lib/status"
+
 </script>
 
 <template>
     <div class="container">
         <div class="title_container">
-
             <div class="title">ステータス</div>
         </div>
-        <!-- <div class="name_container">
+        <!-- <div class="test_container">
             <div class="name">{{ status.name }}</div>
             <div class="name_underline"></div>
         </div> -->
@@ -151,7 +151,7 @@ import status from "~/lib/status"
         </div>
         <div class="container_foot">
             <div>キャラクターのステータスを確認します</div>
-            <div><kbd>B</kbd>：戻る</div>
+            <a href="/" class="return">戻る</a>
         </div>
     </div>
 </template>
@@ -162,9 +162,6 @@ import status from "~/lib/status"
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    /* background-color: rgb(255 122 127 / 10%); */
-    /* background-color: #262524; */
-    /* background-color: var(--color-bg-translucent); */
     background-image: linear-gradient(45deg, var(--color-bg-translucent), rgb(17 16 13 / 94%));
 }
 
@@ -330,5 +327,9 @@ import status from "~/lib/status"
 
 .container_foot kbd {
     padding-left: 4px;
+}
+
+.return:hover {
+    text-decoration: underline;
 }
 </style>

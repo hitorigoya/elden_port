@@ -14,7 +14,7 @@ function select_eq_id(id) {
     select_eq_img.value = eq.img
 }
 
-// select_eq_id(1)
+select_eq_id(1)
 </script>
 
 <template>
@@ -44,7 +44,9 @@ function select_eq_id(id) {
                         <div class="equipment_icon" @mouseover="select_eq_id(4)">
                             <img src="/img/inventory/python.png" alt="">
                         </div>
-                        <div class="equipment_icon"></div>
+                        <div class="equipment_icon" @mouseover="select_eq_id(5)">
+                            <img src="/img/inventory/node_js.png" alt="">
+                        </div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
@@ -162,9 +164,7 @@ function select_eq_id(id) {
         </div>
         <div class="container_foot">
             <div>スキルスロットを選択してください</div>
-            <div class="control_foot">
-                <div><kbd>B</kbd>：戻る</div>
-            </div>
+            <a href="/" class="return">戻る</a>
         </div>
     </div>
 </template>
@@ -236,7 +236,6 @@ img {
 .equipment_icon {
     height: 72px;
     width: 72px;
-    /* background-color: rgb(36 35 34 /64%); */
     background-color: rgb(46 45 44 /64%);
     border-radius: 10% /20%;
 }
@@ -247,10 +246,8 @@ img {
 }
 
 .equipment_icon:hover {
-    /* box-shadow: rgb(17 16 13 / 30%) 0px 8px 24px; */
     box-shadow: var(--color-separator) 0px 0px 12px;
     background-color: rgb(56 55 54 /64%);
-    /* background-color: rgb(97 91 71 / 20%); */
 }
 
 .equipment_icon_hidden {
@@ -287,7 +284,6 @@ img {
 .container_mid_inline {
     display: grid;
     grid-template-columns: 24px 1fr;
-    /* justify-items: center; */
 }
 
 .letf_line_mid {
@@ -303,7 +299,6 @@ img {
     border-radius: 2px;
     background-color: rgb(17 16 13 / 30%);
     box-shadow: var(--color-separator) 0px 0px 12px;
-    /* box-shadow: rgb(17 16 13 / 30%) 0px 8px 24px; */
 }
 
 .select_eq_text {
@@ -348,5 +343,9 @@ img {
 
 .control_foot {
     padding-left: 4px;
+}
+
+.return:hover {
+    text-decoration: underline;
 }
 </style>

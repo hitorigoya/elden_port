@@ -38,10 +38,14 @@ import status from "~/lib/status"
                     <div class="menu_icon"><img src="/img/menu/scissors.png" alt=""></div>
                     <div class="menu_text">マルチプレイ</div>
                 </div>
-                <div class="menu_item">
+                <NuxtLink to="/profile/" class="menu_item">
+                    <div class="menu_icon"><img src="/img/menu/gears.png" alt=""></div>
+                    <div class="menu_text">プロフィール</div>
+                </NuxtLink>
+                <!-- <div class="menu_item">
                     <div class="menu_icon"><img src="/img/menu/gears.png" alt=""></div>
                     <div class="menu_text">システム</div>
-                </div>
+                </div> -->
             </div>
             <div class="shortcut">
                 <div class="pouch">
@@ -76,9 +80,9 @@ import status from "~/lib/status"
         </div>
         <div class="footer">
             <div class="footer_control">クリック：決定</div>
+            <div class="footer_icons">Icons : <a href="https://game-icons.net/">https://game-icons.net/</a></div>
             <div class="runesHeld">{{ status.runesHeld }}</div>
         </div>
-        <!-- <NuxtLink to="/status/">Status</NuxtLink> -->
     </div>
 </template>
 
@@ -252,6 +256,11 @@ a.menu_item:hover {
     padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer_icons {
+    font-size: 18px;
 }
 
 .runesHeld {
