@@ -15,6 +15,11 @@ function select_eq_id(id) {
 }
 
 select_eq_id(1)
+
+function getInventoryImg(id) {
+    const inv = inventory.find(el => el.id === id)
+    return inv.img
+}
 </script>
 
 <template>
@@ -30,52 +35,52 @@ select_eq_id(1)
                     <div class="equipment_icon_container">
                         <!-- 1 -->
                         <div class="equipment_icon" @mouseover="select_eq_id(1)">
-                            <img src="/img/inventory/html.png" alt="">
+                            <img v-bind:src="getInventoryImg(1)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_id(2)">
-                            <img src="/img/inventory/css.png" alt="">
+                            <img v-bind:src="getInventoryImg(2)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_id(3)">
-                            <img src="/img/inventory/js.png" alt="">
+                            <img v-bind:src="getInventoryImg(3)" alt="" />
                         </div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
                         <!-- 2 -->
                         <div class="equipment_icon" @mouseover="select_eq_id(4)">
-                            <img src="/img/inventory/python.png" alt="">
+                            <img v-bind:src="getInventoryImg(4)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_id(5)">
-                            <img src="/img/inventory/node_js.png" alt="">
+                            <img v-bind:src="getInventoryImg(5)" alt="" />
                         </div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
                         <!-- 3 -->
                         <div class="equipment_icon" @mouseover="select_eq_id(6)">
-                            <img src="/img/inventory/svelte.png" alt="">
+                            <img v-bind:src="getInventoryImg(6)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_id(7)">
-                            <img src="/img/inventory/vue.png" alt="">
+                            <img v-bind:src="getInventoryImg(7)" alt="" />
                         </div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
                         <!-- 4 -->
                         <div class="equipment_icon" @mouseover="select_eq_id(14)">
-                            <img src="/img/inventory/vs_code.png" alt="">
+                            <img v-bind:src="getInventoryImg(14)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_id(13)">
-                            <img src="/img/inventory/git.png" alt="">
+                            <img v-bind:src="getInventoryImg(13)" alt="" />
                         </div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>
                         <!-- 5 -->
                         <div class="equipment_icon" @mouseover="select_eq_id(12)">
-                            <img src="/img/inventory/figma.png" alt="">
+                            <img v-bind:src="getInventoryImg(12)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_id(15)">
-                            <img src="/img/inventory/notion.png" alt="">
+                            <img v-bind:src="getInventoryImg(15)" alt="" />
                         </div>
                         <div class="equipment_icon"></div>
                         <div class="equipment_icon"></div>

@@ -15,6 +15,11 @@ function select_eq_id(id) {
 }
 
 select_eq_id(1)
+
+function getEquipmentImg(id) {
+    const eq = equipment.find(el => el.id === id)
+    return eq.img
+}
 </script>
 
 <template>
@@ -30,89 +35,89 @@ select_eq_id(1)
                     <div class="equipment_icon_container">
                         <!-- 1 -->
                         <div class="equipment_icon" @mouseover="select_eq_part = '右手武器１'; select_eq_id(1)">
-                            <img src="/img/equipment/woodclub.png" alt="">
+                            <img v-bind:src="getEquipmentImg(1)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '右手武器２'; select_eq_id(2)">
-                            <img src="/img/equipment/stone-axe.png" alt="">
+                            <img v-bind:src="getEquipmentImg(2)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '右手武器３'; select_eq_id(3)">
-                            <img src="/img/equipment/bone-knife.png" alt="">
+                            <img v-bind:src="getEquipmentImg(3)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '矢１'"></div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '矢２'"></div>
                         <!-- 2 -->
                         <div class="equipment_icon" @mouseover="select_eq_part = '左手武器１'; select_eq_id(4)">
-                            <img src="/img/equipment/primitive-torch.png" alt="">
+                            <img v-bind:src="getEquipmentImg(4)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '左手武器２'; select_eq_id(12)">
-                            <img src="/img/equipment/iron-cross.png" alt="">
+                            <img v-bind:src="getEquipmentImg(12)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '左手武器３'; select_eq_id(6)">
-                            <img src="/img/equipment/crossbow.png" alt="">
+                            <img v-bind:src="getEquipmentImg(6)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = 'ボルト１'; select_eq_id(7)">
-                            <img src="/img/equipment/stone-spear.png" alt="">
+                            <img v-bind:src="getEquipmentImg(7)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = 'ボルト２'"></div>
                         <!-- 3 -->
                         <div class="equipment_icon" @mouseover="select_eq_part = '兜'; select_eq_id(8)">
-                            <img src="/img/equipment/light-helm.png" alt="">
+                            <img v-bind:src="getEquipmentImg(8)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '胴鎧'; select_eq_id(9)">
-                            <img src="/img/equipment/leather-armor.png" alt="">
+                            <img v-bind:src="getEquipmentImg(9)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '手甲'; select_eq_id(10)">
-                            <img src="/img/equipment/gauntlet.png" alt="">
+                            <img v-bind:src="getEquipmentImg(10)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '足甲'; select_eq_id(11)">
-                            <img src="/img/equipment/leather-boot.png" alt="">
+                            <img v-bind:src="getEquipmentImg(11)" alt="" />
                         </div>
                         <div class="equipment_icon equipment_icon_hidden"></div>
                         <!-- 4 -->
                         <div class="equipment_icon" @mouseover="select_eq_part = 'タリスマン１'; select_eq_id(5)">
-                            <img src="/img/equipment/gem-chain.png" alt="">
+                            <img v-bind:src="getEquipmentImg(5)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = 'タリスマン２'; select_eq_id(13)">
-                            <img src="/img/equipment/primitive-necklace.png" alt="">
+                            <img v-bind:src="getEquipmentImg(13)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = 'タリスマン３'; select_eq_id(14)">
-                            <img src="/img/equipment/prayer-beads.png" alt="">
+                            <img v-bind:src="getEquipmentImg(14)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = 'タリスマン４'; select_eq_id(16)">
-                            <img src="/img/equipment/templar-shield.png" alt="">
+                            <img v-bind:src="getEquipmentImg(16)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = 'タリスマン５'; select_eq_id(15)">
-                            <img src="/img/equipment/fire-ring.png" alt="">
+                            <img v-bind:src="getEquipmentImg(15)" alt="" />
                         </div>
                         <!-- 5 -->
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム１'; select_eq_id(17)">
-                            <img src="/img/item/drink-me.png" alt="">
+                            <img v-bind:src="getEquipmentImg(17)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム２'; select_eq_id(18)">
-                            <img src="/img/item/lantern-flame.png" alt="">
+                            <img v-bind:src="getEquipmentImg(18)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム３'; select_eq_id(19)">
-                            <img src="/img/item/berries-bowl.png" alt="">
+                            <img v-bind:src="getEquipmentImg(19)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム４'; select_eq_id(20)">
-                            <img src="/img/item/corn.png" alt="">
+                            <img v-bind:src="getEquipmentImg(20)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム５'"></div>
                         <!-- 6 -->
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム６'; select_eq_id(21)">
-                            <img src="/img/servant/ghost.png" alt="">
+                            <img v-bind:src="getEquipmentImg(21)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム７'; select_eq_id(22)">
-                            <img src="/img/servant/ifrit.png" alt="">
+                            <img v-bind:src="getEquipmentImg(22)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム８'; select_eq_id(23)">
-                            <img src="/img/servant/werewolf.png" alt="">
+                            <img v-bind:src="getEquipmentImg(23)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム９'; select_eq_id(24)">
-                            <img src="/img/servant/centaur.png" alt="">
+                            <img v-bind:src="getEquipmentImg(24)" alt="" />
                         </div>
                         <div class="equipment_icon" @mouseover="select_eq_part = '使用アイテム１０'; select_eq_id(25)">
-                            <img src="/img/servant/unicorn.png" alt="">
+                            <img v-bind:src="getEquipmentImg(25)" alt="" />
                         </div>
                     </div>
                 </div>

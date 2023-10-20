@@ -67,13 +67,12 @@ import status from "~/lib/status"
                         </div>
                         <a href="https://demoooo.com/">オンラインメモ帳アプリ-Nemo-</a>
                         <div>SvelteKitとFastAPIで作ったオンラインメモ帳アプリ</div>
-                        <div>JWTによるシンプルな認証機能付き</div>
                         <br>
+                        <div>JWTによるシンプルな認証機能付き</div>
                         <div>Nginx上で動いていてCertbotによる証明書取得まで一通り行った</div>
-                        <div>今はtmuxさんが頑張って動かしている</div>
                         <br>
                         <div>CPU 1Core メモリ512MBの最低限のVPSサーバーで運営されている</div>
-                        <div>ちなみに月額は600円ちょい</div>
+                        <div>ちなみに月額は600円ほど</div>
                     </div>
                 </div>
                 <div class="skill_container">
