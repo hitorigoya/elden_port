@@ -57,7 +57,7 @@ import status from "~/lib/status"
                         <div>このサイトのデザインの元はゲーム「ELDEN RING」から</div>
                         <div>プレイ時間はおぞましいものになっている</div>
                         <br>
-                        <div>Mリーグを見る為だけにABEMAプレミアムになった</div>
+                        <div>Mリーグを見る為だけにABEMAプレミアム会員になった</div>
                     </div>
                 </div>
             </div>
