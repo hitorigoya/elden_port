@@ -15,10 +15,8 @@ import status from "~/lib/status"
         <div class="container_main">
             <div class="container_start">
                 <div class="level_rune_container">
-                    <div class="level_rune_left_line_container">
-                        <div class="level_rune_left_line"></div>
-                    </div>
-                    <div class="level_rune_inline_container">
+                    <div class="level_rune_left_line"></div>
+                    <div>
                         <div class="field_container">
                             <div>レベル</div>
                             <div>{{ status.level }}</div>
@@ -36,10 +34,8 @@ import status from "~/lib/status"
 
                 </div>
                 <div class="attributePoints_container">
-                    <div class="attributePoints_left_line_container">
-                        <div class="attributePoints_left_line"></div>
-                    </div>
-                    <div class="attributePoints_inline_container">
+                    <div class="attributePoints_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>能力値</div>
                         </div>
@@ -52,11 +48,8 @@ import status from "~/lib/status"
             </div>
             <div class="container_mid">
                 <div class="baseStats_container">
-                    <div class="baseStats_left_line_container">
-                        <div class="baseStats_left_line"></div>
-                    </div>
-                    <div class="baseStats_inline_container">
-
+                    <div class="baseStats_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>基礎力</div>
                         </div>
@@ -98,10 +91,8 @@ import status from "~/lib/status"
             </div>
             <div class="container_end">
                 <div class="attackPower_container">
-                    <div class="attackPower_left_line_container">
-                        <div class="attackPower_left_line"></div>
-                    </div>
-                    <div class="attackPower_inline_container">
+                    <div class="attackPower_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>攻撃力</div>
                         </div>
@@ -110,13 +101,10 @@ import status from "~/lib/status"
                             <div>{{ key.value }}</div>
                         </div>
                     </div>
-
                 </div>
                 <div class="defenseDmgNegation_container">
-                    <div class="defenseDmgNegation_left_line_container">
-                        <div class="defenseDmgNegation_left_line"></div>
-                    </div>
-                    <div class="defenseDmgNegation_inline_container">
+                    <div class="defenseDmgNegation_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>物理防御／カット率</div>
                         </div>
@@ -130,11 +118,8 @@ import status from "~/lib/status"
                     </div>
                 </div>
                 <div class="resistance_container">
-                    <div class="resistance_left_line_container">
-                        <div class="resistance_left_line"></div>
-                    </div>
-                    <div class="resistance_inline_container">
-
+                    <div class="resistance_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>耐性値（肉体／防具）</div>
                         </div>
@@ -151,12 +136,16 @@ import status from "~/lib/status"
         </div>
         <div class="container_foot">
             <div>キャラクターのステータスを確認します</div>
-            <a href="/" class="return">戻る</a>
+            <a href="/">戻る</a>
         </div>
     </div>
 </template>
 
 <style scoped>
+a {
+    text-decoration: underline;
+}
+
 .container {
     font-size: 20px;
     display: grid;
@@ -169,16 +158,6 @@ import status from "~/lib/status"
     display: flex;
     align-items: center;
     height: 112px;
-    /* background-image: linear-gradient(0deg,
-            transparent 0%,
-            rgb(67 63 49 / 94%) 20%,
-            rgb(67 63 49 / 94%) 80%,
-            transparent 100%); */
-
-    /* background-image: radial-gradient(ellipse 50% 50px,
-            rgb(67 63 49 / 94%) 10%,
-            transparent); */
-
     background-image: radial-gradient(at 0% 50%, rgb(67 63 49 / 94%) 0%, transparent 50%);
 }
 
@@ -217,7 +196,7 @@ import status from "~/lib/status"
 }
 
 .level_rune_left_line {
-    height: 135px;
+    height: 100%;
     width: 8px;
     background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
 }
@@ -229,7 +208,7 @@ import status from "~/lib/status"
 }
 
 .attributePoints_left_line {
-    height: 333px;
+    height: 100%;
     width: 8px;
     background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
 }
@@ -258,10 +237,11 @@ import status from "~/lib/status"
 .attackPower_container {
     display: grid;
     grid-template-columns: 24px 1fr;
+    margin-bottom: 16px;
 }
 
 .attackPower_left_line {
-    height: 200px;
+    height: 100%;
     width: 8px;
     background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
 }
@@ -269,10 +249,11 @@ import status from "~/lib/status"
 .defenseDmgNegation_container {
     display: grid;
     grid-template-columns: 24px 1fr;
+    margin-bottom: 16px;
 }
 
 .defenseDmgNegation_left_line {
-    height: 260px;
+    height: 100%;
     width: 8px;
     background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
 }
@@ -283,7 +264,7 @@ import status from "~/lib/status"
 }
 
 .resistance_left_line {
-    height: 148px;
+    height: 100%;
     width: 8px;
     background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
 }
@@ -295,16 +276,6 @@ import status from "~/lib/status"
 .field_container {
     display: flex;
     justify-content: space-between;
-}
-
-
-
-.attackPower_container {
-    margin-bottom: 16px;
-}
-
-.defenseDmgNegation_container {
-    margin-bottom: 16px;
 }
 
 .column3_field_container {
@@ -323,13 +294,5 @@ import status from "~/lib/status"
     padding-bottom: 24px;
     padding-left: 120px;
     padding-right: 120px;
-}
-
-.container_foot kbd {
-    padding-left: 4px;
-}
-
-.return:hover {
-    text-decoration: underline;
 }
 </style>

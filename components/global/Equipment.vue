@@ -196,7 +196,7 @@ select_eq_id(1)
         </div>
         <div class="container_foot">
             <div>装備スロットを選択してください</div>
-            <a href="/" class="return">戻る</a>
+            <a href="/">戻る</a>
         </div>
     </div>
 </template>
@@ -204,6 +204,10 @@ select_eq_id(1)
 <style scoped>
 img {
     display: block;
+}
+
+a {
+    text-decoration: underline;
 }
 
 .container {
@@ -357,7 +361,7 @@ img {
 }
 
 .character_data_left_line {
-    height: 640px;
+    height: 100%;
     width: 8px;
     background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
 }
@@ -371,13 +375,5 @@ img {
     font-size: 20px;
     padding-left: 104px;
     padding-bottom: 24px;
-}
-
-.control_foot {
-    padding-left: 4px;
-}
-
-.return:hover {
-    text-decoration: underline;
 }
 </style>

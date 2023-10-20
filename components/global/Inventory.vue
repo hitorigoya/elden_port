@@ -164,7 +164,7 @@ select_eq_id(1)
         </div>
         <div class="container_foot">
             <div>スキルスロットを選択してください</div>
-            <a href="/" class="return">戻る</a>
+            <a href="/">戻る</a>
         </div>
     </div>
 </template>
@@ -172,6 +172,10 @@ select_eq_id(1)
 <style scoped>
 img {
     display: block;
+}
+
+a {
+    text-decoration: underline;
 }
 
 .container {
@@ -250,17 +254,6 @@ img {
     background-color: rgb(56 55 54 /64%);
 }
 
-.equipment_icon_hidden {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.equipment_icon_hidden:hover {
-    box-shadow: none;
-    background-color: transparent;
-}
-
-
 .container_mid {
     padding-left: 16px;
     white-space: pre-line;
@@ -325,7 +318,7 @@ img {
 }
 
 .character_data_left_line {
-    height: 640px;
+    height: 100%;
     width: 8px;
     background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
 }
@@ -339,13 +332,5 @@ img {
     font-size: 20px;
     padding-left: 104px;
     padding-bottom: 24px;
-}
-
-.control_foot {
-    padding-left: 4px;
-}
-
-.return:hover {
-    text-decoration: underline;
 }
 </style>

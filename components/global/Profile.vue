@@ -14,11 +14,9 @@ import status from "~/lib/status"
         </div>
         <div class="container_main">
             <div class="container_start">
-                <div class="attributePoints_container">
-                    <div class="attributePoints_left_line_container">
-                        <div class="birth_left_line"></div>
-                    </div>
-                    <div class="attributePoints_inline_container">
+                <div class="birth_container">
+                    <div class="birth_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>生まれ</div>
                         </div>
@@ -40,11 +38,9 @@ import status from "~/lib/status"
                         </div>
                     </div>
                 </div>
-                <div class="attributePoints_container">
-                    <div class="attributePoints_left_line_container">
-                        <div class="history_left_line"></div>
-                    </div>
-                    <div class="attributePoints_inline_container">
+                <div class="history_container">
+                    <div class="history_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>経歴</div>
                         </div>
@@ -63,15 +59,13 @@ import status from "~/lib/status"
             </div>
 
             <div class="container_end">
-                <div class="attackPower_container">
-                    <div class="attackPower_left_line_container">
-                        <div class="created_left_line"></div>
-                    </div>
-                    <div class="attackPower_inline_container">
+                <div class="created_container">
+                    <div class="created_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>成果物</div>
                         </div>
-                        <a href="https://demoooo.com/" class="app_link">オンラインメモ帳アプリ-Nemo-</a>
+                        <a href="https://demoooo.com/">オンラインメモ帳アプリ-Nemo-</a>
                         <div>SvelteKitとFastAPIで作ったオンラインメモ帳アプリ</div>
                         <div>JWTによるシンプルな認証機能付き</div>
                         <br>
@@ -82,15 +76,13 @@ import status from "~/lib/status"
                         <div>ちなみに月額は600円ちょい</div>
                     </div>
                 </div>
-                <div class="attackPower_container">
-                    <div class="attackPower_left_line_container">
-                        <div class="skill_left_line"></div>
-                    </div>
-                    <div class="attackPower_inline_container">
+                <div class="skill_container">
+                    <div class="skill_left_line"></div>
+                    <div>
                         <div class="field_title_container">
                             <div>技術スタック</div>
                         </div>
-                        <div>使用した事のある技術スタックの詳細は<a href="/inventory/" class="app_link">インベントリ</a>にて</div>
+                        <div>使用した事のある技術スタックの詳細は<a href="/inventory/">インベントリ</a>にて</div>
                     </div>
                 </div>
             </div>
@@ -98,37 +90,22 @@ import status from "~/lib/status"
         </div>
         <div class="container_foot">
             <div>キャラクターのプロフィールを確認します</div>
-            <a href="/" class="return">戻る</a>
+            <a href="/">戻る</a>
         </div>
     </div>
 </template>
 
 <style scoped>
-.birth_left_line {
-    height: 200px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
-}
-
-.history_left_line {
-    height: 400px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
-}
-
-.created_left_line {
-    height: 360px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
-}
-
+.birth_left_line,
+.history_left_line,
+.created_left_line,
 .skill_left_line {
-    height: 80px;
+    height: 100%;
     width: 8px;
     background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
 }
 
-.app_link {
+a {
     text-decoration: underline;
 }
 
@@ -144,16 +121,6 @@ import status from "~/lib/status"
     display: flex;
     align-items: center;
     height: 112px;
-    /* background-image: linear-gradient(0deg,
-            transparent 0%,
-            rgb(67 63 49 / 94%) 20%,
-            rgb(67 63 49 / 94%) 80%,
-            transparent 100%); */
-
-    /* background-image: radial-gradient(ellipse 50% 50px,
-            rgb(67 63 49 / 94%) 10%,
-            transparent); */
-
     background-image: radial-gradient(at 0% 50%, rgb(67 63 49 / 94%) 0%, transparent 50%);
 }
 
@@ -187,81 +154,33 @@ import status from "~/lib/status"
     padding-right: 104px;
 }
 
-.level_rune_container {
+
+.birth_container {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    margin-bottom: 32px;
+}
+
+.history_container {
     display: grid;
     grid-template-columns: 24px 1fr;
 }
 
-.level_rune_left_line {
-    height: 135px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
+.created_container {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    margin-bottom: 32px;
 }
 
-.attributePoints_container {
+.skill_container {
     display: grid;
     grid-template-columns: 24px 1fr;
 }
-
-.attributePoints_left_line {
-    height: 333px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
-}
-
-.container_mid {
-    padding-left: 48px;
-}
-
-.baseStats_container {
-    display: grid;
-    grid-template-columns: 24px 1fr;
-}
-
-.baseStats_left_line {
-    height: 600px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
-}
-
 
 .container_end {
-    padding-left: 48px;
     padding-right: 112px;
 }
 
-.attackPower_container {
-    display: grid;
-    grid-template-columns: 24px 1fr;
-}
-
-.attackPower_left_line {
-    height: 200px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
-}
-
-.defenseDmgNegation_container {
-    display: grid;
-    grid-template-columns: 24px 1fr;
-}
-
-.defenseDmgNegation_left_line {
-    height: 260px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
-}
-
-.resistance_container {
-    display: grid;
-    grid-template-columns: 24px 1fr;
-}
-
-.resistance_left_line {
-    height: 148px;
-    width: 8px;
-    background-image: radial-gradient(at 50% 50%, var(--color-separator) 0%, transparent 72%);
-}
 
 .field_title_container {
     color: var(--color-text-secondary);
@@ -272,39 +191,10 @@ import status from "~/lib/status"
     justify-content: space-between;
 }
 
-
-
-.attackPower_container {
-    margin-bottom: 16px;
-}
-
-.defenseDmgNegation_container {
-    margin-bottom: 16px;
-}
-
-.column3_field_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.inline_field_container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .container_foot {
     padding-top: 16px;
     padding-bottom: 24px;
     padding-left: 120px;
     padding-right: 120px;
-}
-
-.container_foot kbd {
-    padding-left: 4px;
-}
-
-.return:hover {
-    text-decoration: underline;
 }
 </style>
