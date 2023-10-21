@@ -81,7 +81,7 @@ import status from "~/lib/status"
                         <div class="field_title_container">
                             <div>技術スタック</div>
                         </div>
-                        <div>使用した事のある技術スタックの詳細は<a href="/inventory/">インベントリ</a>にて</div>
+                        <div>使用した事のある技術スタックの詳細は<NuxtLink to="/inventory/">インベントリ</NuxtLink>にて</div>
                     </div>
                 </div>
             </div>
