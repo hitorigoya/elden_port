@@ -52,7 +52,7 @@ import status from "~/lib/status"
                 <div>JWTによるシンプルな認証機能付き</div>
                 <div>Nginx上で動いていてCertbotによる証明書取得まで一通り行った</div>
                 <br>
-                <div>CPU 1Core メモリ512MBの最低限のVPSサーバーで運営されている</div>
+                <div>1Core 512MBの最低限のVPSサーバーで運営されている</div>
                 <div>ちなみに月額は600円ほど</div>
             </div>
             <div class="skill_container">

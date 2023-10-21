@@ -51,9 +51,8 @@
 .container {
     min-height: 100vh;
     background-image: linear-gradient(to right,
-            var(--color-bg-translucent) 10%,
-            transparent 50%,
-            var(--color-bg-translucent) 90%);
+            var(--color-bg-translucent) 50%,
+            transparent 100%);
     display: grid;
 }
 
