@@ -136,7 +136,7 @@ import status from "~/lib/status"
         </div>
         <div class="container_foot">
             <div>キャラクターのステータスを確認します</div>
-            <a href="/">戻る</a>
+            <NuxtLink to="/">戻る</NuxtLink>
         </div>
     </div>
 </template>

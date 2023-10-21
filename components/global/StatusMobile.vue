@@ -97,7 +97,7 @@ import status from "~/lib/status"
                 </div>
             </div>
         </div>
-        <a href="/" class="return">戻る</a>
+        <NuxtLink to="/" class="return">戻る</NuxtLink>
     </div>
 </template>
 

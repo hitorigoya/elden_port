@@ -60,7 +60,7 @@ import status from "~/lib/status"
                 <div>使用した事のある技術スタックの詳細は<a href="/inventory/" class="app_link">インベントリ</a>にて</div>
             </div>
         </div>
-        <a href="/" class="return">戻る</a>
+        <NuxtLink to="/" class="return">戻る</NuxtLink>
     </div>
 </template>
 

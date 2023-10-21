@@ -201,7 +201,7 @@ function getEquipmentImg(id) {
         </div>
         <div class="container_foot">
             <div>装備スロットを選択してください</div>
-            <a href="/">戻る</a>
+            <NuxtLink to="/">戻る</NuxtLink>
         </div>
     </div>
 </template>

@@ -169,7 +169,7 @@ function getInventoryImg(id) {
         </div>
         <div class="container_foot">
             <div>スキルスロットを選択してください</div>
-            <a href="/">戻る</a>
+            <NuxtLink to="/">戻る</NuxtLink>
         </div>
     </div>
 </template>
