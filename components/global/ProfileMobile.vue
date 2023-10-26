@@ -46,7 +46,7 @@ import status from "~/lib/status"
             </div>
             <div class="created_container">
                 <div class="field_title">成果物</div>
-                <a href="https://demoooo.com/" class="app_link">オンラインメモ帳アプリ-Nemo-</a>
+                <a href="https://demoooo.com/">オンラインメモ帳アプリ-Nemo-</a>
                 <div>SvelteKitとFastAPIで作ったオンラインメモ帳アプリ</div>
                 <br>
                 <div>JWTによるシンプルな認証機能付き</div>
@@ -54,6 +54,10 @@ import status from "~/lib/status"
                 <br>
                 <div>1Core 512MBの最低限のVPSサーバーで運営されている</div>
                 <div>ちなみに月額は600円ほど</div>
+                <br>
+                <a href="https://markdown-html.pages.dev/">Markdown to html</a>
+                <div>Markdownエディター+HTML変換アプリ</div>
+                <div>Rustライブラリの<a href="https://github.com/raphlinus/pulldown-cmark">pulldown-cmark</a>を使用した実装</div>
             </div>
             <div class="skill_container">
                 <div class="field_title">技術スタック</div>
@@ -122,7 +126,7 @@ import status from "~/lib/status"
     justify-content: space-between;
 }
 
-.app_link {
+a {
     text-decoration: underline;
 }
 
