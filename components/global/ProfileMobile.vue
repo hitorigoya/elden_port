@@ -12,6 +12,25 @@ import status from "~/lib/status"
             <div class="name_underline"></div>
         </div>
         <div class="main_container">
+            <div class="created_container">
+                <div class="field_title">成果物</div>
+                <a href="https://demoooo.com/">オンラインメモ帳アプリ-Nemo-</a>
+                <div>SvelteKitとFastAPIで作ったオンラインメモ帳アプリ</div>
+                <br>
+                <div>JWTによるシンプルな認証機能付き</div>
+                <div>Nginx上で動いていてCertbotによる証明書取得まで一通り行った</div>
+                <br>
+                <div>1Core 512MBの最低限のVPSサーバーで運営されている</div>
+                <div>ちなみに月額は600円ほど</div>
+                <br>
+                <a href="https://markdown-html.pages.dev/">Markdown to html</a>
+                <div>Markdownエディター+HTML変換アプリ</div>
+                <div>Rustライブラリの<a href="https://github.com/raphlinus/pulldown-cmark">pulldown-cmark</a>を使用した実装</div>
+            </div>
+            <div class="skill_container">
+                <div class="skill_title">技術スタック</div>
+                <div>使用した事のある技術スタックの詳細は<NuxtLink to="/inventory/">インベントリ</NuxtLink>にて</div>
+            </div>
             <div class="birth_container">
                 <div class="birth_title">生まれ</div>
                 <div class="field_container">
@@ -32,10 +51,10 @@ import status from "~/lib/status"
                 </div>
             </div>
             <div class="history_container">
-                <div class="field_title">経歴</div>
-                <div>2020年の9月から独学でプログラミングを始める</div>
-                <div>ポートフォリオの為にこのサイトを作る事にしたがポートフォリオ自体がどういうものなのかよく分かっていない</div>
-                <div>使用したフレームワークはVueとNuxt、スキルは無いが好奇心はある</div>
+                <div class="history_title">経歴</div>
+                <div>2020年9月から独学でWeb開発を始める</div>
+                <div>ポートフォリオの為にこのサイトを作る事にした</div>
+                <div>使用したフレームワークはVue3とNuxt3</div>
                 <div>どちらかといえばフロントエンドの方が好き</div>
                 <br>
                 <div>趣味はゲームと麻雀</div>
@@ -43,25 +62,6 @@ import status from "~/lib/status"
                 <div>プレイ時間はおぞましいものになっている</div>
                 <br>
                 <div>Mリーグを見る為だけにABEMAプレミアム会員になった</div>
-            </div>
-            <div class="created_container">
-                <div class="field_title">成果物</div>
-                <a href="https://demoooo.com/">オンラインメモ帳アプリ-Nemo-</a>
-                <div>SvelteKitとFastAPIで作ったオンラインメモ帳アプリ</div>
-                <br>
-                <div>JWTによるシンプルな認証機能付き</div>
-                <div>Nginx上で動いていてCertbotによる証明書取得まで一通り行った</div>
-                <br>
-                <div>1Core 512MBの最低限のVPSサーバーで運営されている</div>
-                <div>ちなみに月額は600円ほど</div>
-                <br>
-                <a href="https://markdown-html.pages.dev/">Markdown to html</a>
-                <div>Markdownエディター+HTML変換アプリ</div>
-                <div>Rustライブラリの<a href="https://github.com/raphlinus/pulldown-cmark">pulldown-cmark</a>を使用した実装</div>
-            </div>
-            <div class="skill_container">
-                <div class="field_title">技術スタック</div>
-                <div>使用した事のある技術スタックの詳細は<NuxtLink to="/inventory/">インベントリ</NuxtLink>にて</div>
             </div>
         </div>
         <NuxtLink to="/" class="return">戻る</NuxtLink>
@@ -106,6 +106,9 @@ import status from "~/lib/status"
     padding: 24px;
 }
 
+.field_title,
+.skill_title,
+.history_title,
 .birth_title {
     font-size: 18px;
     line-height: 1;
@@ -113,12 +116,10 @@ import status from "~/lib/status"
     padding-bottom: 8px;
 }
 
-.field_title {
-    font-size: 18px;
-    line-height: 1;
-    color: var(--color-text-secondary);
+.skill_title,
+.history_title,
+.birth_title {
     padding-top: 32px;
-    padding-bottom: 8px;
 }
 
 .field_container {

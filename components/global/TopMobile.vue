@@ -42,6 +42,11 @@
         </div>
         <div class="footer">
             <!-- <div class="runesHeld">0</div> -->
+            <div class="footer_github_icon_container">
+                <a href="https://github.com/hitorigoya">
+                    <img src="~/assets/img/github.png" alt="" />
+                </a>
+            </div>
             <div class="footer_icons">Icons : <a href="https://game-icons.net/">https://game-icons.net/</a></div>
         </div>
     </div>
@@ -143,6 +148,11 @@
     border-left: 2px solid #918369;
     border-right: 2px solid #918369;
     border-radius: 1px;
+}
+
+.footer_github_icon_container {
+    display: flex;
+    justify-content: center;
 }
 
 .footer_icons {

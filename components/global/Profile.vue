@@ -14,51 +14,6 @@ import status from "~/lib/status"
         </div>
         <div class="container_main">
             <div class="container_start">
-                <div class="birth_container">
-                    <div class="birth_left_line"></div>
-                    <div>
-                        <div class="field_title_container">
-                            <div>生まれ</div>
-                        </div>
-                        <div class="field_container">
-                            <div>性別</div>
-                            <div>男</div>
-                        </div>
-                        <div class="field_container">
-                            <div>年頃</div>
-                            <div>中年</div>
-                        </div>
-                        <div class="field_container">
-                            <div>素性</div>
-                            <div>素寒貧</div>
-                        </div>
-                        <div class="field_container">
-                            <div>形見</div>
-                            <div>なし</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="history_container">
-                    <div class="history_left_line"></div>
-                    <div>
-                        <div class="field_title_container">
-                            <div>経歴</div>
-                        </div>
-                        <div>2020年の9月から独学でプログラミングを始める</div>
-                        <div>ポートフォリオの為にこのサイトを作る事にしたがポートフォリオ自体がどういうものなのかよく分かっていない</div>
-                        <div>使用したフレームワークはVueとNuxt、スキルは無いが好奇心はある</div>
-                        <div>どちらかといえばフロントエンドの方が好き</div>
-                        <br>
-                        <div>趣味はゲームと麻雀</div>
-                        <div>このサイトのデザインの元はゲーム「ELDEN RING」から</div>
-                        <div>プレイ時間はおぞましいものになっている</div>
-                        <br>
-                        <div>Mリーグを見る為だけにABEMAプレミアム会員になった</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container_end">
                 <div class="created_container">
                     <div class="created_left_line"></div>
                     <div>
@@ -89,7 +44,50 @@ import status from "~/lib/status"
                     </div>
                 </div>
             </div>
-
+            <div class="container_end">
+                <div class="birth_container">
+                    <div class="birth_left_line"></div>
+                    <div>
+                        <div class="field_title_container">
+                            <div>生まれ</div>
+                        </div>
+                        <div class="field_container">
+                            <div>性別</div>
+                            <div>男</div>
+                        </div>
+                        <div class="field_container">
+                            <div>年頃</div>
+                            <div>中年</div>
+                        </div>
+                        <div class="field_container">
+                            <div>素性</div>
+                            <div>素寒貧</div>
+                        </div>
+                        <div class="field_container">
+                            <div>形見</div>
+                            <div>なし</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history_container">
+                    <div class="history_left_line"></div>
+                    <div>
+                        <div class="field_title_container">
+                            <div>経歴</div>
+                        </div>
+                        <div>2020年9月から独学でWeb開発を始める</div>
+                        <div>ポートフォリオの為にこのサイトを作る事にした</div>
+                        <div>使用したフレームワークはVue3とNuxt3</div>
+                        <div>どちらかといえばフロントエンドの方が好き</div>
+                        <br>
+                        <div>趣味はゲームと麻雀</div>
+                        <div>このサイトのデザインの元はゲーム「ELDEN RING」から</div>
+                        <div>プレイ時間はおぞましいものになっている</div>
+                        <br>
+                        <div>Mリーグを見る為だけにABEMAプレミアム会員になった</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container_foot">
             <div>キャラクターのプロフィールを確認します</div>

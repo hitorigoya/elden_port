@@ -79,7 +79,11 @@ import status from "~/lib/status"
             </div>
         </div>
         <div class="footer">
-            <div class="footer_control">クリック：決定</div>
+            <div class="footer_control">
+                <a href="https://github.com/hitorigoya">
+                    <img src="~/assets/img/github.png" alt="" />
+                </a>
+            </div>
             <div class="footer_icons">Icons : <a href="https://game-icons.net/">https://game-icons.net/</a></div>
             <div class="runesHeld">{{ status.runesHeld }}</div>
         </div>
