@@ -6,7 +6,7 @@ import status from "~/lib/status"
 <template>
     <div class="container">
         <div class="title_container">
-            <div class="title">プロフィール</div>
+            <div class="title">ポートフォリオ</div>
         </div>
         <div class="test_container">
             <div class="name">{{ status.name }}</div>
@@ -90,7 +90,7 @@ import status from "~/lib/status"
             </div>
         </div>
         <div class="container_foot">
-            <div>キャラクターのプロフィールを確認します</div>
+            <div>キャラクターのポートフォリオを確認します</div>
             <NuxtLink to="/">戻る</NuxtLink>
         </div>
     </div>

@@ -40,7 +40,7 @@ import status from "~/lib/status"
                 </div>
                 <NuxtLink to="/profile/" class="menu_item">
                     <div class="menu_icon"><img src="/img/menu/gears.png" alt=""></div>
-                    <div class="menu_text">プロフィール</div>
+                    <div class="menu_text">ポートフォリオ</div>
                 </NuxtLink>
                 <!-- <div class="menu_item">
                     <div class="menu_icon"><img src="/img/menu/gears.png" alt=""></div>

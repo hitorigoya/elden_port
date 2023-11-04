@@ -5,7 +5,7 @@ import status from "~/lib/status"
 <template>
     <div class="container">
         <div class="title_container">
-            <div class="title">プロフィール</div>
+            <div class="title">ポートフォリオ</div>
         </div>
         <div>
             <div class="name">{{ status.name }}</div>
