@@ -32,15 +32,10 @@ import status from "~/lib/status"
                         <a href="https://markdown-html.pages.dev/">Markdown to html</a>
                         <div>Markdownエディター+HTML変換アプリ</div>
                         <div>Rustライブラリの<a href="https://github.com/raphlinus/pulldown-cmark">pulldown-cmark</a>を使用した実装</div>
-                    </div>
-                </div>
-                <div class="skill_container">
-                    <div class="skill_left_line"></div>
-                    <div>
-                        <div class="field_title_container">
-                            <div>技術スタック</div>
-                        </div>
-                        <div>使用した事のある技術スタックの詳細は<NuxtLink to="/inventory/">インベントリ</NuxtLink>にて</div>
+                        <br>
+                        <a href="/">このサイト</a>
+                        <div>使用したフレームワークはVue3とNuxt3</div>
+                        <div>デザインの元はゲーム「ELDEN RING」から</div>
                     </div>
                 </div>
             </div>
@@ -69,22 +64,13 @@ import status from "~/lib/status"
                         </div>
                     </div>
                 </div>
-                <div class="history_container">
-                    <div class="history_left_line"></div>
+                <div class="skill_container">
+                    <div class="skill_left_line"></div>
                     <div>
                         <div class="field_title_container">
-                            <div>経歴</div>
+                            <div>技術スタック</div>
                         </div>
-                        <div>2020年9月から独学でWeb開発を始める</div>
-                        <div>ポートフォリオの為にこのサイトを作る事にした</div>
-                        <div>使用したフレームワークはVue3とNuxt3</div>
-                        <div>どちらかといえばフロントエンドの方が好き</div>
-                        <br>
-                        <div>趣味はゲームと麻雀</div>
-                        <div>このサイトのデザインの元はゲーム「ELDEN RING」から</div>
-                        <div>プレイ時間はおぞましいものになっている</div>
-                        <br>
-                        <div>Mリーグを見る為だけにABEMAプレミアム会員になった</div>
+                        <div>使用した事のある技術スタックの詳細は<NuxtLink to="/inventory/">インベントリ</NuxtLink>にて</div>
                     </div>
                 </div>
             </div>
